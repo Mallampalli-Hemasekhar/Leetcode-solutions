@@ -13,7 +13,7 @@ class Solution(object):
                 b[l],b[r]=b[r],b[l]
                 l+=1
                 r-=1
-            elif b[l] in a and b[r] not in a:
+            elif b[r] not in a:
                 r-=1
             else:
                 l+=1
