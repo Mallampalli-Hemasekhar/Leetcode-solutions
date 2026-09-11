@@ -4,5 +4,4 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        w=s.split()
-        return len(w)
+        return len(s.split())
