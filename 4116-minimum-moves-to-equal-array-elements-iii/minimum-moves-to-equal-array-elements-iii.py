@@ -6,8 +6,7 @@ class Solution(object):
         """
         a=max(nums)
         c=0
-        for i in range(len(nums)):
-            while nums[i]<a:
-                nums[i]=nums[i]+1
-                c+=1
+        for i in nums:
+            c+=(a-i)
         return c
+            
