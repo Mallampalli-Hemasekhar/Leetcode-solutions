@@ -5,16 +5,10 @@ class Solution(object):
         :rtype: int
         """
         c=0
-        i=0
-        while i < len(words):
-            j = i + 1
-
-            while j < len(words):
-                if words[i] == words[j][::-1]:
-                    c += 1
-                j += 1
-
-            i += 1
+        for i in range(len(words)):
+            for j in range(i+1,len(words)):
+                if words[i]==words[j][::-1]:
+                    c+=1
         return c
 
 
